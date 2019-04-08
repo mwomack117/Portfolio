@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Start */
+#hero {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/road2s.jpg");
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0 5px 15px 0px lightslategrey;
+}
+
+#brand {
+  font-size: 2.3em;
+  color: white;
+  font-family: "Spectral", serif;
+}
+
+.navlinks li a {
+  color: white;
+  font-size: 1em;
+  font-family: "Spectral", serif;
+}
+
+.burger {
+  color: white;
+}
+
+.welcome {
+  text-align: center;
+  color: white;
+  margin-top: 11%;
+}
+
+.welcome h2 {
+  color: white;
+  font-size: 3em;
+  font-family: "Karla", sans-serif;
+}
+
+.hire {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  border: white 1px solid;
+  border-radius: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+.hire:hover {
+  background-color: #555;
+  color: white;
+}
+/* Navigation End */
+
+/* About Section */
+#portfolio-image {
+  border-radius: 100px;
+  margin: 3em 0;
+}
+
+#about-me {
+  font-size: 1.2em;
+  font-family: "Karla", sans-serif;
+}
+#about-me h2 {
+  font-family: "Spectral", serif;
+}
+
+/* About Section End */
+
+/* Portfolio Section */
+#portfolio {
+  height: 800px;
+}
+
+#portfolio h2 {
+  font-family: "Spectral", serif;
+}
+
+#portfolio-boxes {
+  margin: 0 5%;
+}
+/* .uk-first-column {
+  padding-left: 0 !important;
+} */
+.uk-grid > * {
+  padding-right: 30px;
+}
+
+#portfolio-boxes img {
+  border-radius: 15px;
+}
+
+.project-thumb:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease-in-out;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+}
+
+/* Portfolio Section End */
+
+footer {
+  height: 60px;
+  padding: 15px 0;
+  color: white;
+  background-color: #202f56;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 5px;
+}
+
+.scroll-to-top {
+  background-color: #000000;
+  border-radius: 2px;
+  /* display: none; */
+  position: fixed;
+  right: 35px;
+  top: 94%;
+  text-align: center;
+  z-index: 999;
+}
+
+.scroll-to-top i {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 6px;
+}
