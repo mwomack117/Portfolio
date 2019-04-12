@@ -72,32 +72,29 @@ body {
   font-size: 1.2em;
   font-family: "Karla", sans-serif;
 }
-#about-me h2 {
+#about-me h1 {
   font-family: "Spectral", serif;
 }
 
 /* About Section End */
 
 /* Portfolio Section */
-#portfolio {
-  padding-bottom: 50px;
-}
+/* #portfolio {
+  padding-bottom: 80px;
+} */
 
-#portfolio h2 {
+#portfolio h1 {
   font-family: "Spectral", serif;
 }
 
-#portfolio-boxes {
-  margin: 0 5%;
-}
-
-#portfolio-boxes img {
-  border-radius: 15px;
+.project-thumb a {
+  border-radius: 8px;
 }
 
 .project-thumb {
   position: relative;
   padding-left: 0 !important;
+  font-family: "Karla", sans-serif;
 }
 
 .image {
@@ -116,11 +113,14 @@ body {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #008cba;
-  border-radius: 15px;
 }
 
 .project-thumb:hover .overlay {
-  opacity: 1;
+  opacity: 0.9;
+}
+
+.project-thumb:hover .title {
+  opacity: 0;
 }
 
 .app-details {
@@ -135,8 +135,57 @@ body {
   text-align: center;
 }
 
+/* uk-overlay */
+.uk-overlay {
+  padding: 9px 20px 7px 15px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.project-thumb:hover .uk-overlay {
+  opacity: 1;
+}
 /* Portfolio Section End */
 
+/* Contact */
+#contact {
+  height: 25vh;
+  padding-top: 4em;
+  padding-bottom: 3em;
+  font-family: "Karla", sans-serif;
+}
+
+#contact h1 {
+  font-family: "Spectral", serif;
+}
+
+#contact a {
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration-color: initial;
+}
+
+.email {
+  padding-left: 7px;
+}
+
+#mail-btn {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin: 0 1em;
+  font-size: 1em;
+  min-width: 10em;
+  transition: all 0.25s ease;
+}
+
+#mail-btn:hover {
+  filter: blur(0.5px);
+  font-size: 1.1em;
+  background-color: #222;
+  color: white;
+}
+
+/* Footer and scroll to top */
 footer {
   padding: 65px 0 30px 0;
   color: white;
