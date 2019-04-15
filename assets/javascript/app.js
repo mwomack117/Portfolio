@@ -7,8 +7,8 @@ function scrollFunction() {
     document.body.scrollTop > 500 ||
     document.documentElement.scrollTop > 500
   ) {
-    document.getElementById("scroll").style.display = "block";
+    document.getElementById("scroll").classList.add("scroll-to-top");
   } else {
-    document.getElementById("scroll").style.display = "none";
+    document.getElementById("scroll").classList.remove("scroll-to-top");
   }
 }

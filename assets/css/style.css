@@ -187,16 +187,22 @@ footer h1 {
 .scroll-to-top {
   background-color: #000000;
   border-radius: 2px;
-  display: none;
+  /* display: none; */
   position: fixed;
   right: 35px;
   top: 94%;
   text-align: center;
-  /* z-index: 999; */
+  z-index: 999;
 }
-
-.hide {
-  display: none;
+.show {
+  background-color: #000000;
+  border-radius: 2px;
+  /* display: none; */
+  position: fixed;
+  right: 35px;
+  top: 94%;
+  text-align: center;
+  z-index: 999;
 }
 
 .scroll-to-top i {
