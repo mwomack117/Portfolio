@@ -37,6 +37,9 @@ body {
   text-align: center;
   color: white;
   margin-top: 11%;
+  -webkit-animation: fadeIn 1s ease-in;
+  -moz-animation: fadeIn 1s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 
 .welcome h2 {
@@ -44,6 +47,61 @@ body {
   font-size: 2.5em;
   font-family: "Karla", sans-serif;
 }
+
+.welcome-main {
+  display: block;
+  -webkit-animation: moveInLeft 1s ease-out;
+  -moz-animation: moveInLeft 1s ease-out;
+  animation: moveInLeft 1s ease-out;
+}
+.welcome-sub {
+  display: block;
+  -webkit-animation: moveInRight 1s ease-out;
+  -moz-animation: moveInRight 1s ease-out;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 /* Navigation End */
 
 /* About Section Start */
