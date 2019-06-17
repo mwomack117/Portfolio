@@ -61,15 +61,6 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -88,19 +79,12 @@ body {
   }
 }
 
-@keyframes moveInLeft {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
   }
-
-  80% {
-    transform: translateX(10px);
-  }
-
   100% {
     opacity: 1;
-    transform: translate(0);
   }
 }
 
@@ -136,14 +120,14 @@ body {
   }
 }
 
-@keyframes moveInRight {
+@keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(-100px);
   }
 
   80% {
-    transform: translateX(-10px);
+    transform: translateX(10px);
   }
 
   100% {
@@ -169,6 +153,22 @@ body {
 }
 
 @-moz-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(100px);
