@@ -350,33 +350,3 @@ footer h1 {
   font-size: 18px;
   margin: 0 6px;
 }
-
-/* Media Queries */
-@media screen and (max-width: 600px) {
-  #portfolio-boxes > div {
-    min-height: 270px;
-  }
-  #project-thumb > div {
-    min-height: 270px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  #portfolio-boxes > div {
-    height: 375px;
-  }
-  #project-thumb > div {
-    height: 375px;
-  }
-}
-
-@media screen and (max-width: 970px) {
-  #portfolio-boxes > div {
-    min-height: 275px;
-    max-height: 325px;
-  }
-  #project-thumb > div {
-    min-height: 275px;
-    max-height: 325px;
-  }
-}
